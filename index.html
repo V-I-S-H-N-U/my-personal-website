@@ -1,0 +1,1767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/20220513_181834.png "  type="image/x-icon">
+    <title>VISHNU S PRAMOD</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--========== CSS ==========-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+
+
+
+
+
+
+
+      /*...............................MAIN CONTENT..........................*/
+      @import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Tapestry', cursive;
+        }
+        .llm{
+          background: #000;
+          height: 400vh;
+        }
+
+
+
+
+        /*...............................NAVBAR...........................*/
+        .nav-link{
+            font-size: 16px;
+            margin: 3px;
+            color: white!important;
+            font-weight: 500;
+        }
+        .navbar-nav{
+            text-align: right;
+            margin-right: 20px;
+        }
+        .navbar-toggler{
+            padding-right: 30px;
+            outline: none!important;
+            border: none!important;
+          
+        }
+        .nav-link:hover{
+            font-weight: 600;
+            border-bottom: 1px solid white;
+        }
+        @media only screen and (max-width:1000px){
+            .nav-link:hover{
+                border-bottom: none!important;
+            }
+        }
+        .navbar{
+            background: #131313;
+            padding: 1rem 8rem;
+            z-index: 1000;
+        }
+        .navbar .navbar-brand{
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+        #navbarSupportedContent > ul > li:nth-child(n) > a{
+            color: #fff;
+  
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+            font-size: 1.1rem;
+            padding: 0 0.8rem;
+
+        }
+        #navbarSupportedContent > ul > li:nth-child(n) > a:hover{
+            color: #00BF85;
+        }
+
+
+
+
+
+        /*....................................GIF WITH TEXT.........................*/
+        .mid{
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .mid video{
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            object-fit: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .wrapper{
+            position: relative;
+            display: flex;
+        }
+        .mid .wrapper li{
+         
+            font-size: 3.1rem;
+           
+        }
+        .wrapper .dynamic-txts{
+  
+             height: 90px;
+             line-height: 90px;
+             overflow: hidden;
+        }
+        .dynamic-txts li{
+             list-style: none;
+             color: #fff;
+             text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+             font-size: 60px;
+             font-weight: 500;
+             position: relative;
+             top: 0;
+             animation: slide 10s steps(4) infinite;
+        }
+        @keyframes slide {
+             100%{
+             top: -360px;
+            }
+        }   
+        .dynamic-txts li span{
+             position: relative;
+             line-height: 90px;
+        }
+        .dynamic-txts li span::after{
+             content: "";
+             position: relative;
+             height: 100vh;
+             width: 500px;
+             background: #343F4F; 
+             animation: typing 3s steps(10) infinite;
+        }
+        @keyframes typing {
+             40%, 60%{
+             left: calc(100% + 30px);
+             }
+             100%{
+             left: 0;
+             }
+        }
+
+
+
+
+
+
+        /*....................................CONTACT.........................*/
+        .gg{
+             background: #000;
+             width: 800px;
+             height: 250px;
+             margin-left: 300px;
+            
+        }
+        body{
+             background: #000;
+        }
+        @media screen and (max-width: 500px){
+        .gg{margin-left: 0px;
+             width: 100%;
+        }   
+       }
+        .circle {
+             position: absolute;
+             border-radius: 50%;
+             background: linear-gradient(120deg, #1D976C, #2c3e50);
+        }
+        .circles {
+             position: absolute;
+             height: 270px;
+             width: 450px;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             z-index: -1;
+        }
+        .circle-1 {
+             height: 300px;
+             width: 300px;
+             top: 130px;
+             left: -300px;
+             opacity: 0.8;
+             animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
+             animation-iteration-count: infinite;
+             animation-name: float;
+             -webkit-animation-name: float;
+             animation-duration: 6s;
+             -webkit-animation-duration: 6s;
+             -webkit-animation-delay: 3.5s;
+             animation-delay: 3.5s;
+             animation-direction: alternate;
+        }
+
+        .circle-2 {
+             height: 240px;
+             width: 240px;
+             bottom: 200px;
+             right: -350px;
+             opacity: 0.8;
+             animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
+             animation-iteration-count: infinite;
+             animation-name: float;
+             -webkit-animation-name: float;
+             animation-duration: 6s;
+             -webkit-animation-duration: 6s;
+             -webkit-animation-delay: 2s;
+             animation-delay: 2s;
+             animation-direction: alternate;
+        }
+        @keyframes float {
+             0% {
+             -webkit-transform: rotateX(0deg) translateY(0px);
+             -moz-transform: rotateX(0deg) translateY(0px);
+             -ms-transform: rotateX(0deg) translateY(0px);
+             -o-transform: rotateX(0deg) translateY(0px);
+             transform: rotateX(0deg) translateY(0px);
+            }
+
+            50% {
+             -webkit-transform: rotateX(0deg) translateY(1px) translateX(5px);
+             -moz-transform: rotateX(0deg) translateY(10px) translateX(5px);
+             -ms-transform: rotateX(0deg) translateY(30px) translateX(5px);
+             -o-transform: rotateX(0deg) translateY(40px) translateX(5px);
+             transform: rotateX(0deg) translateY(10px) translateX(5px);
+            }
+            100% {
+             -webkit-transform: rotateX(0deg) translateY(0px) translateX(1px);
+             -moz-transform: rotateX(0deg) translateY(0px) translateX(1px);
+             -ms-transform: rotateX(0deg) translateY(0px) translateX(1px);
+             -o-transform: rotateX(0deg) translateY(0px) translateX(1px);
+             transform: rotateX(0deg) translateY(0px) translateX(1px);
+            }
+        }
+
+        .container{
+             position: relative;
+             min-width: 1100px;
+             min-height: 550px;
+             display: flex;
+             z-index: 1000;
+   
+        }
+        .container .contactinfo{
+             position: absolute;
+             top: 40px;
+             width: 350px;
+             height: calc(100% - 80px);
+             background: rgba(255, 255, 255, 0.1);
+             backdrop-filter: blur(35px);
+             border-radius: 20px;
+             border: 2px solid rgba(255, 255, 255, 0.1);
+             box-shadow: 0 0 80px rgba(0, 0, 0, 0.25);
+             padding: 30px 30px 30px 30px;
+             overflow: hidden;
+             z-index: 1;
+             padding: 40px;
+             display: flex;
+             justify-content: center;
+             flex-direction: column;
+             justify-content: space-between;
+             box-shadow: 0 20px 25px rgba(0,0,0,0.2);
+        }
+        .container .contactinfo h2{
+             color: #fff;
+             font-size: 24px;
+             font-weight: 500;
+        }
+        .container .contactinfo ul.info{
+             position: relative;
+             margin: 20px 0;
+        }
+        .container .contactinfo ul.info li{
+             position: relative;
+             list-style: none;
+             display:flex;
+             margin: 20px 0;
+             cursor: pointeer;
+             align-items: flex-start;
+        }
+        .container .contactinfo ul.info li span:nth-child(1){
+             width: 30px;
+             min-width: 30px; 
+        }
+        .container .contactinfo ul.info li span:nth-child(1) img{
+             max-width: 100%;
+             filter: invert(1);
+             margin-top: -5px;    
+        }
+        .mail{
+             margin-left: -3px;
+        }
+        .container .contactinfo ul.info li span:nth-child(2){
+             color: #fff;
+             margin-left: 10px;
+             font-weight: 300;
+        }
+        .container .contactinfo ul.sci{
+             position: relative;
+             display: flex;
+        }
+        .container .contactinfo ul.sci li{
+             list-style: none;
+             margin-right: 15px;
+        }
+        .container .contactinfo ul.sci li a{
+             text-decoration: none;
+        }
+        .container .contactinfo ul.sci li a img{
+             filter: invert(1);
+             width: 40px;
+        } 
+        .twi{
+             height: 50px;
+        }
+        .container .contactform{
+             position: absolute;
+             padding: 70px 50px;
+             padding-left: 250px;
+             margin-left: 150px;
+             width: calc(100% - 150px);
+             height: 100%;
+             border-radius: 20px;
+             background: rgba(255, 255, 255, 0.1);
+             backdrop-filter: blur(35px);
+             border: 2px solid rgba(255, 255, 255, 0.1);
+             box-shadow: 0 0 80px rgba(0, 0, 0, 0.25);
+             overflow: hidden;
+        }
+        .container .contactform h2{
+             color: #0f3959;
+             font-size: 24px;
+             font-weight: 500;
+        }
+        .container .contactform .formBox{
+             position: relative;
+             display: flex;
+             justify-content: space-between;
+             flex-wrap: wrap;
+             padding-top: 30px;   
+        }
+        .container .contactform .formBox .inputBox{
+             position: relative;
+             margin-bottom: 35px ;   
+        }
+        .container .contactform .formBox .inputBox.w50{
+             width: 47%;
+        }
+        .container .contactform .formBox .inputBox.w100{
+             width: 100%;
+        }
+       .container .contactform .formBox .inputBox input,.container .contactform .formBox .inputBox textarea{
+             width: 100% !important;
+             padding: 5px 0;
+             resize: none;
+             font-size: 18px;
+             font-weight: 300;
+             border: none;
+             border-bottom: 1px solid #777;
+             outline: none;
+             border-radius: 20px; 
+             background: rgba(255, 255, 255, 0.1);
+             backdrop-filter: blur(35px);
+             border: 2px solid rgba(255, 255, 255, 0.1);
+             box-shadow: 0 0 80px rgba(0, 0, 0, 0.25);
+             overflow: hidden;
+        }
+        .container .contactform .formBox .inputBox textarea{
+             height: 120px;
+        }
+       .container .contactform .formBox .inputBox span{
+             position: absolute;
+             left: 0;
+             padding: 5px 0;
+             font-size: 18px;
+             font-weight: 300;
+             color: #fff;
+             opacity: 70%;
+             margin-left: 10px;
+             transition: 0.3s;
+             pointer-events: none;
+        }
+        section .container .contactform .formBox .inputBox input:focus ~ span,section .container .contactform .formBox .inputBox textarea:focus ~ span,section .container .contactform .formBox .inputBox input:valid ~ span,section .container .contactform .formBox .inputBox textarea:valid ~ span{
+             transform: translateY(-20px);
+             font-size: 12px;
+             font-weight: 400;
+             letter-spacing: 1px;
+             color: #ff568c;
+             font-weight: 500; 
+        }
+        section .container .contactform .formBox .inputBox input[type="submit"]{
+             position: relative;
+             cursor: pointer;
+             background: #0f3959;
+             color: #fff;
+             border: none;
+             max-width: 150px;
+             padding: 12px;
+             border-radius: 20px;
+             background: rgba(255, 255, 255, 0.1);
+             backdrop-filter: blur(35px);
+             border: 2px solid rgba(255, 255, 255, 0.1);
+             box-shadow: 0 0 80px rgba(0, 0, 0, 0.25);
+             overflow: hidden;
+        }
+        section .container .contactform .formBox .inputBox input[type="submit"]:hover{
+             text-shadow: 0 0 5px #fff,
+                0 0 10px #fff, 
+                0 0 20px  rgb(142, 10, 243), 
+                0 0 30px  rgb(142, 10, 243), 
+                0 0 40px  rgb(142, 10, 243), 
+                0 0 50px  rgb(142, 10, 243), 
+                0 0 60px  rgb(142, 10, 243);
+             box-shadow: 0 0 5px #fff,
+                0 0 10px #fff, 
+                0 0 20px  rgb(142, 10, 243), 
+                0 0 30px  rgb(142, 10, 243), 
+                0 0 40px  rgb(142, 10, 243), 
+                0 0 50px  rgb(142, 10, 243), 
+                0 0 60px  rgb(142, 10, 243);
+        }
+
+        .twi{
+             margin-top: -8px;
+        } 
+       .ghub{
+             margin-top: -7px;
+       
+        }
+        @media(max-width : 1200px){
+        .container{
+             width: 90%;
+             min-width: auto;
+             margin: 20px;
+             box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+        }
+       .container .contactinfo{
+             top: 0;
+             height: 550px;
+             position: relative;
+             box-shadow: none;
+        }
+        .container .contactform{
+             position: relative;
+             width: calc(100% - 350px);
+             padding-left:0;
+             margin-left: 0;
+             padding: 40px;
+             height: 550px;
+             box-shadow: none;
+        }
+        .circle-2{
+             right: -265px;
+        }
+
+        }
+
+
+
+        @media(max-width : 991px){
+        .circle-1{
+             top: 250px;
+             left: -200px;
+        }
+       .circle-2{
+             bottom: 320px;
+             right: -60px;
+        }
+       section::before{
+             display: none;
+       }
+       .container{
+             display: flex;
+             flex-direction: column-reverse;
+       }
+       .container .contactform{
+             width: 100%;
+             height: auto;
+       }
+       .container .contactinfo{
+             width: 100%;
+             height: auto;
+             flex-direction: row;
+       }
+       .container .contactinfo ul.sci{
+             position: relative;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             flex-direction: column;
+        }
+        }
+       @media(max-width : 600px){
+       .circle-1{
+             top: 300px;
+             left: -150px;
+       }
+       .circle-2{
+             bottom: 390px;
+             right: -10px;
+        }
+ 
+       .container .contactform{
+             padding: 25px;
+             flex-direction: column;
+             align-items: flex-start;
+        }
+    
+       .container .contactform .formBox .inputBox.w50{
+             width: 100%;
+       }
+
+       }
+
+       section{
+             height: 100vh;
+             display: flex;
+             align-items: center; 
+       }
+       .container{
+             width: 100%;
+             max-width: 1160px;
+             margin: 0 auto;
+             padding: 0 20px;
+       }
+       .ty
+       {
+             margin-top: 500px;
+       }
+
+
+
+
+
+
+       /*....................................ABOUT...........................*/
+      .grid{
+             display: grid;
+             grid-template-columns: repeat(2,1fr);
+             gap: 2.5rem;
+             align-items: center;
+             justify-content: center;
+       }
+      .left img{
+             max-width: 100%;
+             height: auto;
+             vertical-align: middle;
+       }
+      .right > *{
+             margin-bottom: 1.1rem;
+             color: #fff;
+       }
+      .right h1{
+             font-size: 2rem;
+             font-weight: 800;
+       } 
+      .right p{
+             text-align: justify;
+       } 
+      .right .btn{
+             text-decoration: none;
+             display: inline-block;
+             padding: 10px 25px;
+             border: 2px solid #EC449B;
+             border-radius: 5px;
+             position: relative;
+             z-index: 1;
+       }
+      .btn::after{
+             content: "";
+             background: #EC449B;
+             box-shadow: 
+                    0 0 5px #fff,
+                    0 0 10px #fff, 
+                    0 0 20px #EC449B, 
+                    0 0 25px #EC449B, 
+                    0 0 30px #EC449B, 
+                    0 0 35px #EC449B, 
+                    0 0 40px #EC449B;
+             position: absolute;
+             top: 0;
+             left: 0;
+             height: 100%;
+             width: 0%;
+             z-index: -1;
+             transition: width .5s ease;
+       }
+      .btn:hover::after{
+             width: 100%;
+       }
+      @media (max-width:768px){
+     .grid{
+             grid-template-columns: 1fr;
+       }
+      }
+     .left img{
+             border-radius: 100%;
+      }  
+      .about{
+            text-transform: uppercase;
+            font-size: 35px;
+            color:white;
+            text-align: center;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+        }
+       .about::after{
+            content:"";
+            height: 5px;
+            width: 100px;
+            background-color: blue;
+            box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+            border-radius: 25px;
+            display: block;
+            margin: auto;
+        } 
+        @media(max-width:500px){
+            .left img{
+                margin-left: 30px;
+                margin-top: 300px;
+            }
+            .right h1{
+                margin-top: 50px;
+            }
+        }
+        
+
+
+
+
+
+
+        /*...................................SKILLS.......................*/
+        .skills{
+          
+            text-transform: uppercase;
+            font-size: 35px;
+            color:white;
+            text-align: center;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+        }
+        @media(max-width:500px){
+          .skills{margin-top: 300px; }
+        }
+       .skills::after{
+            content:"";
+            height: 5px;
+            width: 100px;
+            background-color: blue;
+            box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+            border-radius: 25px;
+            display: block;
+            margin: auto;
+        }
+        
+        @media(max-width:500px){
+           .ski{
+               margin-top: 210px;
+           }
+        }
+
+
+
+
+
+
+        /*..................................SCROLL DOWN BUTTON......................*/
+        .mouse_scroll {
+        display: block;
+        margin: 0 auto;
+        width: 24px;
+        height: 100px;
+        margin-top: 125px;
+        z-index: 1000;
+        cursor: pointer;
+      }
+      
+      
+      .m_scroll_arrows
+      {
+        display: block;
+        width: 5px;
+        height: 5px;
+        -ms-transform: rotate(45deg); /* IE 9 */
+        -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+        transform: rotate(45deg);
+         
+        border-right: 2px  #0073e6;
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+        
+  
+        border-bottom: 2px #0073e6;
+        margin: 0 0 3px 4px;
+        
+        width: 16px;
+        height: 16px;
+      }
+      
+      
+      .unu
+      {
+        margin-top: 1px;
+      }
+      
+      .unu, .doi, .trei
+      {
+          -webkit-animation: mouse-scroll 1s infinite;
+          -moz-animation: mouse-scroll 1s infinite;
+          animation: mouse-scroll 1s infinite;
+        
+      }
+      
+      .unu
+      {
+        -webkit-animation-delay: .1s;
+        -moz-animation-delay: .1s;
+        -webkit-animation-direction: alternate;
+        
+        animation-direction: alternate;
+        animation-delay: alternate;
+      }
+      
+      .doi
+      {
+        -webkit-animation-delay: .2s;
+        -moz-animation-delay: .2s;
+        -webkit-animation-direction: alternate;
+        
+        animation-delay: .2s;
+        animation-direction: alternate;
+        
+        margin-top: -6px;
+      }
+      
+      .trei
+      {
+        -webkit-animation-delay: .3s;
+        -moz-animation-delay: .3s;
+        -webkit-animation-direction: alternate;
+        
+        animation-delay: .3s;
+        animation-direction: alternate;
+        
+        
+        margin-top: -6px;
+      }
+      
+      .mouse {
+        height: 42px;
+        width: 24px;
+        border-radius: 14px;
+        transform: none;
+        border: 2px solid white;
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+        top: 170px;
+      }
+      
+      .wheel {
+        height: 5px;
+        width: 2px;
+        display: block;
+        margin: 5px auto;
+        background: white;
+        
+        position: relative;
+        
+        height: 4px;
+        width: 4px;
+        border: 2px solid #fff;
+        -webkit-border-radius: 8px;
+                border-radius: 8px;
+      }
+      
+      .wheel {
+        -webkit-animation: mouse-wheel 0.6s linear infinite;
+        -moz-animation: mouse-wheel 0.6s linear infinite;
+        animation: mouse-wheel 0.6s linear infinite;
+      }
+      
+      @-webkit-keyframes mouse-wheel{
+         0% {
+          opacity: 1;
+          -webkit-transform: translateY(0);
+          -ms-transform: translateY(0);
+          transform: translateY(0);
+        }
+      
+        100% {
+          opacity: 0;
+          -webkit-transform: translateY(6px);
+          -ms-transform: translateY(6px);
+          transform: translateY(6px);
+        }
+      }
+      @-moz-keyframes mouse-wheel {
+        0% { top: 1px; }
+        25% { top: 2px; }
+        50% { top: 3px;}
+        75% { top: 2px;}
+        100% { top: 1px;}
+      }
+      @-o-keyframes mouse-wheel {
+      
+         0% { top: 1px; }
+        25% { top: 2px; }
+        50% { top: 3px;}
+        75% { top: 2px;}
+        100% { top: 1px;}
+      }
+      @keyframes mouse-wheel {
+      
+         0% { top: 1px; }
+        25% { top: 2px; }
+        50% { top: 3px;}
+        75% { top: 2px;}
+        100% { top: 1px;}
+      }
+      
+      @-webkit-keyframes mouse-scroll {
+      
+        0%   { opacity: 0;}
+        50%  { opacity: .5;}
+        100% { opacity: 1;}
+      }
+      @-moz-keyframes mouse-scroll {
+      
+        0%   { opacity: 0; }
+        50%  { opacity: .5; }
+        100% { opacity: 1; }
+      }
+      @-o-keyframes mouse-scroll {
+      
+        0%   { opacity: 0; }
+        50%  { opacity: .5; }
+        100% { opacity: 1; }
+      }
+      @keyframes mouse-scroll {
+      
+        0%   { opacity: 0; }
+        50%  { opacity: .5; }
+        100% { opacity: 1; }
+      }
+      /*.........................................SKILLS...........................*/
+      .ski{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 20px;
+        background: #000;
+      }
+      .wrapp{
+        width: 800px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .wrapp .card{
+        background: rgb(0, 0, 0);
+        width: calc(33% - 20px);
+        height: 300px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+      }
+      .wrapp .card .circle{
+        position: relative;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        cursor: default;
+      }
+      .card .circle .box,.card .circle .box span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+      .card .circle .box{
+        height: 100%;
+        width: 100%;
+        background: rgb(0, 0, 0);
+        border-radius: 50%;
+        transform: translate(-50%, -50%) scale(0.8);
+        transition: all 0.2s;
+      }
+      .card .circle:hover .box{
+        transform: translate(-50%, -50%) scale(0.91);
+      }
+      .card .circle .box span,.wrapp .card .text{
+        color: #fff;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff0058, 0 0 20px #ff0058, 0 0 25px #ff0058, 0 0 30px #ff0058, 0 0 35px #ff0058; 
+      }
+      .circle .box span{
+        font-size: 38px;
+        font-family: sans-serif;
+        font-weight: 600;
+        transform: translate(-45%, -45%);
+        transition: all 0.1s;
+      }
+      .card .circle:hover .box span{
+        transform: translate(-45%, -45%) scale(1.09);
+      }
+      .card .text{
+        font-size: 20px;
+        font-weight: 600;
+      }
+      @media(max-width: 753px){
+     .wrapper{
+        max-width: 700px;
+      }
+     .wrapp .card{
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+     }
+     }
+     @media(max-width: 500px){
+     .wrapp{
+        max-width: 500px;
+     }
+     .wrapp .card{
+        width: 100%;
+    }
+    }
+
+
+
+
+
+
+    /*...................................................ACHIEVEMENTS.................................*/
+    .ch
+    { 
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       min-height: 100vh;
+       background: #000000
+    }
+
+    .ch .container
+    {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-wrap: wrap;
+       padding: 40px 0;
+    }
+    .container .box
+    {
+       position: relative;
+       width: 320px;
+       height: 219px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: 40px 30px;
+       transition: 0.5s;
+    }
+    .container .box::before
+    {
+       content:' ';
+       position: absolute;
+       top: 0;
+       left: 50px;
+       width: 50%;
+       height: 100%;
+       text-decoration: none;
+       background: #fff;
+       border-radius: 8px;
+       transform: skewX(15deg);
+       transition: 0.5s;
+    }
+    .container .box::after
+    {
+       content:'';
+       position: absolute;
+       top: 0;
+       left: 50;
+       width: 50%;
+       height: 100%;
+       background: #fff;
+       border-radius: 8px;
+       transform: skewX(15deg);
+       transition: 0.5s;
+       filter: blur(30px);
+    }
+    .container .box:hover:before,.container .box:hover:after
+    {
+       transform: skewX(0deg);
+       left: 20px;
+       width: calc(100% - 90px);  
+    }
+
+    .container .box:nth-child(1):before,.container .box:nth-child(1):after
+    {
+       background: linear-gradient(315deg, #ffbc00, #ff0058)
+    }
+
+    .container .box:nth-child(2):before,.container .box:nth-child(2):after
+    {
+       background: linear-gradient(315deg, #03a9f4, #ff0058)
+    }
+
+    .container .box:nth-child(3):before,.container .box:nth-child(3):after
+    {
+       background: linear-gradient(315deg, #4dff03, #00d0ff)
+    }
+
+    .container .box span
+    {
+       display: block;
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       z-index: 5;
+       pointer-events: none;
+    }
+
+    .container .box span::before
+    {
+       content:'';
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 0;
+       height: 0;
+       border-radius: 8px;
+       background: rgba(255, 255, 255, 0.1);
+       backdrop-filter: blur(10px);
+       opacity: 0;
+       transition: 0.1s;  
+       animation: animate 2s ease-in-out infinite;
+       box-shadow: 0 5px 15px rgba(0,0,0,0.08)
+    }
+
+    .container .box:hover span::before
+    {
+       top: -50px;
+       left: 50px;
+       width: 100px;
+       height: 100px;
+       opacity: 1;
+    }
+
+    .container .box span::after
+    {
+       content:'';
+       position: absolute;
+       bottom: 0;
+       right: 0;
+       width: 100%;
+       height: 100%;
+       border-radius: 8px;
+       background: rgba(255, 255, 255, 0.1);
+       backdrop-filter: blur(10px);
+       opacity: 0;
+       transition: 0.5s;
+       animation: animate 2s ease-in-out infinite;
+       box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+       animation-delay: -1s;
+    }
+
+    .container .box:hover span:after
+    { 
+       bottom: -50px;
+       right: 50px;
+       width: 100px;
+       height: 100px;
+       opacity: 1;
+    }
+
+    @keyframes animate
+    {
+     0%, 100%
+      {
+       transform: translateY(10px);
+      }
+  
+     50%
+      {
+       transform: translate(-10px);
+      }
+    }
+
+    .container .box .content
+    {
+       position: relative;
+       left: 0;
+       padding: 20px 40px;
+       background: rgba(255, 255, 255, 0.05);
+       backdrop-filter: blur(10px);
+       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+       border-radius: 30px;
+       z-index: 1;
+       transform: 0.5s;
+       color: #fff;
+    }
+
+    .container .box:hover .content
+    {
+       left: -25px;
+       padding: 60px 40px;
+    }
+    .container .box .content p
+    {
+       font-size: 1.1em;
+       margin-bottom: 10px;
+       line-height: 1.4em;
+    }
+
+    .container .box .content a
+    {
+       display: inline-block;
+       font-size: 1.1em;
+       padding: 10px;
+       border-radius: 4px;
+       text-decoration: none;
+       font-weight: 700;
+       margin-top: 5px; 
+    }
+
+    .container .box .content a:hover
+    {   
+       background: #EC449B; 
+    }
+    .rr{
+       color: rgb(255, 255, 255);
+       text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ffbc00, 0 0 20px #ffbc00, 0 0 25px #ffbc00, 0 0 30px #ffbc00, 0 0 35px #ffbc00;
+    }
+    .jk{
+       color: rgb(255, 255, 255);
+       text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff0058, 0 0 20px #ff0058, 0 0 25px #ff0058, 0 0 30px #ff0058, 0 0 35px #ff0058;
+    }
+    .jk:hover{
+       color: white; 
+    }
+    .ii{
+       color: rgb(255, 255, 255);
+       text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #03a9f4, 0 0 20px #03a9f4, 0 0 25px #03a9f4, 0 0 30px #03a9f4, 0 0 35px #03a9f4;
+    }
+   .qq{
+       color: rgb(255, 255, 255);
+       text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff0058, 0 0 20px #ff0058, 0 0 25px #ff0058, 0 0 30px #ff0058, 0 0 35px #ff0058;
+    }
+    .qq:hover{
+       color: white;
+    }
+    .yy{
+       color: rgb(255, 255, 255);
+       text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #4dff03, 0 0 20px #4dff03, 0 0 25px #4dff03, 0 0 30px #4dff03, 0 0 35px #4dff03;
+    }
+    .ju{
+       color: rgb(255, 255, 255);
+       text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff0058, 0 0 20px #ff0058, 0 0 25px #ff0058, 0 0 30px #ff0058, 0 0 35px #ff0058;
+    }
+    .ju:hover{
+       color: white; 
+    }
+
+
+
+
+
+    /*.......................................BACK TO TOP BUTTON..............................*/
+    #back-to-top-btn {
+       display: none;
+       position: fixed;
+       bottom: 20px;
+       z-index: 1000;
+       right: 20px;
+       font-size: 26px;
+       width: 50px;
+       height: 50px;
+       box-shadow: 0 0 5px #fff,
+                0 0 10px #fff, 
+                0 0 20px  rgb(142, 10, 243), 
+                0 0 30px  rgb(142, 10, 243), 
+                0 0 40px  rgb(142, 10, 243), 
+                0 0 50px  rgb(142, 10, 243), 
+                0 0 60px  rgb(142, 10, 243);
+       background-color: rgb(142, 10, 243);
+       color: #333;
+       cursor: pointer;
+       outline: none;
+       border: 3px solid #333;
+       border-radius: 50%;
+       transition-duration: 0.2s;
+       transition-timing-function: ease-in-out;
+       transition-property: background-color color;
+    }
+    
+    #back-to-top-btn:hover, #back-to-top-btn:focus {
+       background-color: #333;
+       color: #fff;  
+    }
+
+    @media(max-width: 992px) {
+  
+     #back-to-top-btn { font-size: 22px; width: 40px; height: 40px; bottom: 15px; right: 15px; }
+    }
+    @media(max-width:768px) {
+    #back-to-top-btn { font-size: 18px; width: 32px; height: 32px; bottom: 6px; right: 6px; }
+    }
+
+    .btnEntrance {
+       animation-duration: 0.5s;
+       animation-fill-mode: both;
+       animation-name: btnEntrance;
+    }
+    @keyframes btnEntrance {
+    from {
+       opacity: 0;
+       transform: translate3d(0, 100%, 0);
+    }
+    to {
+       opacity: 1;
+       transform: translate3d(0, 0, 0);
+    }
+    }
+
+    .btnExit {
+       animation-duration: 0.25s;
+       animation-fill-mode: both;  
+       animation-name: btnExit;
+    }
+
+    @keyframes btnExit {
+    from {
+       opacity: 1;
+     }
+    to {
+       opacity: 0;
+       transform: translate3d(0, 100%, 0);
+    }
+    }
+    @media(max-width:988px){
+    .fr{ 
+       padding-bottom: 10px;
+       padding-right: 10px;
+    }
+    }
+    @media(max-width:992px){
+   .fr{
+       padding-bottom: 10px;
+       padding-right: 10px;
+   }
+   }
+  @media(max-width:758px){
+  .fr{
+     padding-bottom: 18px;
+     padding-right: 18px;
+  }
+
+  }
+  @media(max-width:500px){
+  .fr{
+     padding-bottom: 20px;
+     padding-right: 18px;
+  }
+  }
+
+
+
+
+
+
+
+/*..............................................SCROLLBAR CUSTOMIZATION...............................*/
+    ::-webkit-scrollbar{
+       box-shadow: 0 0 5px #fff,
+                0 0 10px #fff, 
+                0 0 20px  rgb(142, 10, 243), 
+                0 0 30px  rgb(142, 10, 243), 
+                0 0 40px  rgb(142, 10, 243), 
+                0 0 50px  rgb(142, 10, 243), 
+                0 0 60px  rgb(142, 10, 243);
+                
+    }
+    ::-webkit-scrollbar-thumb{
+       box-shadow: 0 0 5px #fff,
+                0 0 10px #fff, 
+                0 0 20px  rgb(142, 10, 243), 
+                0 0 30px  rgb(142, 10, 243), 
+                0 0 40px  rgb(142, 10, 243), 
+                0 0 50px  rgb(142, 10, 243), 
+                0 0 60px  rgb(142, 10, 243);
+                
+    }
+    </style>
+</head>
+<body>
+
+
+
+
+
+  <!--....................................NAVBAR.................................-->
+  <div class="llm">
+    <nav class="navbar navbar-expand-sm navbar-dark ">
+      <div class="container-fluid">         
+        <button  class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon " ></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto ">
+              <li class="nav-item" style="margin-top:10px;">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item" style="margin-top:10px;">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item" style="margin-top:10px;">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+    
+ 
+    <!--...............................GIF WITH TEXT........................-->  
+    <div class="mid">
+      <video autoplay muted loop>
+          <source class="embed-responsive" src="images/entry.gif" type="video/mp4">
+      </video>
+        <div class="wrapper">
+          <ul class="dynamic-txts text-light">
+            <li><span>HI!</span></li>
+            <li><span>I'm Vishnu, </span></li>
+            <li><span>a designer</span></li>
+            <li><span>a developer</span></li>
+          </ul>
+        </div>
+
+    <!--..............................SCROLL DOWN BUTTON.....................-->   
+      <div class="mouse_scroll"> 
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <a href="#down">
+          <div>
+            <span class="m_scroll_arrows unu"></span>
+            <span class="m_scroll_arrows doi"></span>
+            <span class="m_scroll_arrows trei"></span>
+          </div>
+        </a>
+      </div> 
+    </div>
+    
+    
+
+
+
+    <!--..............................ABOUT......................................-->
+      <h1 class="about"  >about</h1>
+     
+      <section id="down">
+        <div class="container" >
+          <div class="grid">
+              <div class="left">
+                <img style="box-shadow: 
+                    0 0 5px #fff,
+                                    0 0 10px #fff, 
+                                    0 0 20px #949398FF, 
+                                    0 0 30px #949398FF, 
+                                    0 0 40px #949398FF, 
+                                    0 0 50px #949398FF, 
+                                    0 0 60px #949398FF;"src="https://pbs.twimg.com/profile_images/1505236698497953793/xc3mEZpe.jpg" alt="">
+              </div>
+              <div class="right">
+                <h1 style=" text-shadow:
+                     0 0 5px #fff, 0 0 10px #fff, 0 0 15px #EC449B, 0 0 20px #EC449B, 0 0 25px #EC449B, 0 0 30px #EC449B, 0 0 35px #EC449B;">I'M VISHNU S PRAMOD</h1>
+                <h3 style=" text-shadow: 0 0 5px #fff,
+                    0 0 10px #fff, 
+                    0 0 20px #99F443, 
+                    0 0 30px #99F443, 
+                    0 0 40px #99F443, 
+                    0 0 50px #99F443, 
+                    0 0 60px #99F443;
+                    ">WEB DEVELOPER</h3>
+                <p style=" text-shadow: 0 0 5px #fff,
+                    0 0 10px #fff, 
+                    0 0 20px #99F443, 
+                    0 0 30px #99F443, 
+                    0 0 40px #99F443, 
+                    0 0 50px #99F443, 
+                    0 0 60px #99F443;">Hey there! I am Vishnu S Pramod, currently a B-TECH second year student at College Of Engineering Pathanapuram. I am a person who arges to learn more on tech related topics. </p>
+                    <br>
+                <a href="#" class="btn" style="color: white;">RESUME</a>
+              </div>
+          </div>
+        </div>
+      </section>
+ 
+    <br>
+
+
+
+
+
+
+    <!--.......................................SKILLS................................-->
+    <h1 class="skills">skills</h1>
+    <div class="ski" style="margin-top: 30px;" >
+      <div class="wrapp">
+        <div class="card">
+          <div class="circle">
+            <div class="bar"></div>
+            <div class="box"><span></span></div>
+          </div>
+  
+          <div class="text"  >HTML & CSS</div>
+        </div>
+        <div class="card js">
+          <div class="circle">
+            <div class="bar"></div>
+            <div class="box"><span></span></div>
+          </div>
+          <div class="text">Bootstrap</div>
+        </div>
+        <div class="card react">
+          <div class="circle">
+            <div class="bar"></div>
+            <div class="box"><span></span></div>
+          </div>
+          <div class="text">Javascript</div>
+        </div>
+      </div>
+    </div>
+    <script>
+        let options = {
+          startAngle: -1.55,
+          size: 150,
+          value: 0.85,
+          fill: {gradient: ['#ffbc00', '#ff0058']}
+        }
+        $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+        function(event, progress, stepValue){
+          $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+        });
+        $(".js .bar").circleProgress({
+          value: 0.70
+        });
+        $(".react .bar").circleProgress({
+          value: 0.60
+        });
+    </script>
+
+
+
+
+    <!--..........................................ACHIEVEMENTS...................................-->
+    <h1 class="skills" style="margin-top: 50px;">achievements</h1>
+    <div class="ch" style="margin-top: 50px;">
+      <div class="container" >
+        <div class="box">
+          <span></span>
+          <div class="content"> 
+          <p class="rr">Completed the Programming Fundamentals on July 23 2021, an online course authorized by Duke University and offered through coursera</p>
+          <a href="https://drive.google.com/file/d/1MQVKOfVYgdjFAMVniU_d1edLcNvNyW3d/view?usp=drivesdk" class="btn jk" >Read More</a>
+          </div>
+        </div>
+        <div class="box">
+          <span></span>
+          <div class="content">
+          <p class="ii">Completed the Microsoft AI Classroom Series on December 29 2020,conducted by microsoft in association with futureskills and nasscom</p>
+          <a href="https://drive.google.com/file/d/1MSpztnh6XfMakl1KvQLc_MX88YzQ1wJW/view?usp=drivesdk" class="btn qq">Read More</a>
+          </div>
+        </div>      
+        <div class="box">
+          <span></span>
+          <div class="content"> 
+          <p class="yy">Completed the requirements and successfully submitting an idea in young innovators programme held on 2021 conducted by KDISC</p>
+          <a href="https://drive.google.com/file/d/1MTLgl_bbNo1pDXk772ZctmgNn5FfksS5/view?usp=drivesdk" class="btn ju" >Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!--...............................................CONTACT.......................................-->
+    <h1 class="skills" style="margin-top: 50px;">Contact Us</h1>
+    <section class="ty" style="margin-top: 250px;">
+      <div class="container" height="200vh">
+        <div class="circles">
+          <div class="circle circle-1"></div>
+          <div class="circle circle-2"></div>
+        </div> 
+        <div class="contactinfo">
+          <div>
+          <h2 style=" text-shadow:0 0 5px #fff,
+             0 0 10px #fff, 
+             0 0 20px  rgb(243, 29, 10), 
+             0 0 30px rgb(243, 29, 10), 
+             0 0 40px  rgb(243, 29, 10), 
+             0 0 50px  rgb(243, 29, 10), 
+             0 0 60px  rgb(243, 29, 10);">CONTACT INFO</h2>
+          <ul class="info">
+            <li>
+                <span><img src="images/20220503_130648.png"></span>
+                <span style=" text-shadow:0 0 5px #fff,
+                0 0 10px #fff, 
+                0 0 20px  rgb(142, 10, 243), 
+                0 0 30px  rgb(142, 10, 243), 
+                0 0 40px  rgb(142, 10, 243), 
+                0 0 50px  rgb(142, 10, 243), 
+                0 0 60px  rgb(142, 10, 243);">Prakkulam, kollam, Kerala</span>
+            </li>
+            <li>
+                <span><img src="images/20220503_131042.png" class="mail"></span>
+                <span style=" text-shadow: 0 0 5px #fff,
+                0 0 10px #fff, 
+                0 0 20px  rgb(142, 10, 243), 
+                0 0 30px  rgb(142, 10, 243), 
+                0 0 40px  rgb(142, 10, 243), 
+                0 0 50px  rgb(142, 10, 243), 
+                0 0 60px  rgb(142, 10, 243);">vishnupramod21@gmail.com</span>
+            </li>
+            <li>
+                <span><img src="images/20220503_125153.png" ></span>
+                <span style=" text-shadow: 0 0 5px #fff,
+                0 0 10px #fff, 
+                0 0 20px  rgb(142, 10, 243), 
+                0 0 30px  rgb(142, 10, 243), 
+                0 0 40px  rgb(142, 10, 243), 
+                0 0 50px  rgb(142, 10, 243), 
+                0 0 60px  rgb(142, 10, 243);">+91-6238728316</span>
+            </li>
+          </ul>
+        </div>
+          <ul class="sci">
+            <li><a href="https://www.facebook.com/vishnu.pramod.9066"><img class="fb" src="images/20220503_131524.png"></a></li>
+            <li><a href="https://www.instagram.com/invites/contact/?i=1qzb88snjvz1h&utm_content=hcdfpzz"><img src="images/20220503_132544.png"></a></li>
+            <li><a href="https://twitter.com/VishnuSPramod?t=MgQj_KjCKacduFuK5DiXAQ&s=09"><img class="twi" src="images/20220503_132749.png"></a></li>
+            <li><a href="https://www.linkedin.com/in/vishnu-s-pramod-19b7a3234"><img src="images/20220503_133222.png"></a></li>
+            <li><a href="https://github.com/V-I-S-H-N-U"><img class="ghub" src="images/20220503_133713.png"></a></li>
+          </ul>
+      </div>
+
+      <div class="contactform">
+        <h2 style="color: white;text-shadow:0 0 5px #fff,
+         0 0 10px #fff, 
+         0 0 20px  rgb(243, 29, 10), 
+         0 0 30px rgb(243, 29, 10), 
+         0 0 40px  rgb(243, 29, 10), 
+         0 0 50px  rgb(243, 29, 10), 
+         0 0 60px  rgb(243, 29, 10);">SEND A MESSAGE</h2>
+        <div class="formBox">
+          <div class="inputBox w50"> 
+            <input type="text" name="" required style=" box-shadow: 0 0 5px #fff,
+                0 0 10px #fff, 
+                0 0 20px  rgb(142, 10, 243), 
+                0 0 30px  rgb(142, 10, 243), 
+                0 0 40px  rgb(142, 10, 243), 
+                0 0 50px  rgb(142, 10, 243), 
+                0 0 60px  rgb(142, 10, 243);">
+                <span  style=" text-shadow: 0 0 5px #fff,
+                0 0 10px #fff, 
+                0 0 20px  rgb(142, 10, 243), 
+                0 0 30px  rgb(142, 10, 243), 
+                0 0 40px  rgb(142, 10, 243), 
+                0 0 50px  rgb(142, 10, 243), 
+                0 0 60px  rgb(142, 10, 243);">first name</span>
+          </div>
+          <div class="inputBox w50"> 
+            <input type="text" name="" required style=" box-shadow: 0 0 5px #fff,
+                0 0 10px #fff, 
+                0 0 20px  rgb(142, 10, 243), 
+                0 0 30px  rgb(142, 10, 243), 
+                0 0 40px  rgb(142, 10, 243), 
+                0 0 50px  rgb(142, 10, 243), 
+                0 0 60px  rgb(142, 10, 243);">
+                <span style=" text-shadow: 0 0 5px #fff,
+                0 0 10px #fff, 
+                0 0 20px  rgb(142, 10, 243), 
+                0 0 30px  rgb(142, 10, 243), 
+                0 0 40px  rgb(142, 10, 243), 
+                0 0 50px  rgb(142, 10, 243), 
+                0 0 60px  rgb(142, 10, 243);">last name</span>
+          </div>
+          <div class="inputBox w50"> 
+            <input type="text" name="" required style=" box-shadow: 0 0 5px #fff,
+                0 0 10px #fff, 
+                0 0 20px  rgb(142, 10, 243), 
+                0 0 30px  rgb(142, 10, 243), 
+                0 0 40px  rgb(142, 10, 243), 
+                0 0 50px  rgb(142, 10, 243), 
+                0 0 60px  rgb(142, 10, 243);">
+                <span style=" text-shadow: 0 0 5px #fff,
+                0 0 10px #fff, 
+                0 0 20px  rgb(142, 10, 243), 
+                0 0 30px  rgb(142, 10, 243), 
+                0 0 40px  rgb(142, 10, 243), 
+                0 0 50px  rgb(142, 10, 243), 
+                0 0 60px  rgb(142, 10, 243);">email address</span>
+          </div>
+          <div class="inputBox w50"> 
+            <input type="text" name="" required style=" box-shadow: 0 0 5px #fff,
+                0 0 10px #fff, 
+                0 0 20px  rgb(142, 10, 243), 
+                0 0 30px  rgb(142, 10, 243), 
+                0 0 40px  rgb(142, 10, 243), 
+                0 0 50px  rgb(142, 10, 243), 
+                0 0 60px  rgb(142, 10, 243);">
+                <span style=" text-shadow: 0 0 5px #fff,
+                0 0 10px #fff, 
+                0 0 20px  rgb(142, 10, 243), 
+                0 0 30px  rgb(142, 10, 243), 
+                0 0 40px  rgb(142, 10, 243), 
+                0 0 50px  rgb(142, 10, 243), 
+                0 0 60px  rgb(142, 10, 243);">mobile number</span>
+          </div>
+          <div class="inputBox w100"> 
+            <textarea name="" required style=" box-shadow: 0 0 5px #fff,
+                0 0 10px #fff, 
+                0 0 20px  rgb(142, 10, 243), 
+                0 0 30px  rgb(142, 10, 243), 
+                0 0 40px  rgb(142, 10, 243), 
+                0 0 50px  rgb(142, 10, 243), 
+                0 0 60px  rgb(142, 10, 243);"></textarea>
+                <span   style=" text-shadow: 0 0 5px #fff,
+                0 0 10px #fff, 
+                0 0 20px  rgb(142, 10, 243), 
+                0 0 30px  rgb(142, 10, 243), 
+                0 0 40px  rgb(142, 10, 243), 
+                0 0 50px  rgb(142, 10, 243), 
+                0 0 60px  rgb(142, 10, 243);">write your message here....</span>
+          </div>
+          <div class="inputBox w100"> 
+            <input type="submit" value="Send">
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!--.....................................BACK TO TOP BUTTON..............................................-->
+    <button id="back-to-top-btn"><img  class="fr " src="images/top-arrow-icon-16.png" width="50px" height="50px" style="margin-left: -2px; margin-top:-3px;"></button>
+    <script>
+     const backToTopButton = document.querySelector("#back-to-top-btn");
+
+    window.addEventListener("scroll", scrollFunction);
+
+    function scrollFunction() {
+    if (window.pageYOffset > 300) { 
+    if(!backToTopButton.classList.contains("btnEntrance")) {
+      backToTopButton.classList.remove("btnExit");
+      backToTopButton.classList.add("btnEntrance");
+      backToTopButton.style.display = "block";
+    }
+    }
+   else { 
+    if(backToTopButton.classList.contains("btnEntrance")) {
+      backToTopButton.classList.remove("btnEntrance");
+      backToTopButton.classList.add("btnExit");
+      setTimeout(function() {
+        backToTopButton.style.display = "none";
+      }, 250);
+      }
+      }
+    }
+
+    backToTopButton.addEventListener("click", smoothScrollBackToTop);
+
+    function smoothScrollBackToTop() {
+     const targetPosition = 0;
+     const startPosition = window.pageYOffset;
+     const distance = targetPosition - startPosition;
+     const duration = 750;
+      let start = null;
+  
+     window.requestAnimationFrame(step);
+
+     function step(timestamp) {
+     if (!start) start = timestamp;
+     const progress = timestamp - start;
+     window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+    if (progress < duration) window.requestAnimationFrame(step);
+    }
+    }
+
+    function easeInOutCubic(t, b, c, d) {
+    	t /= d/2;
+  	if (t < 1) return c/2*t*t*t + b;
+	    t -= 2;
+	    return c/2*(t*t*t + 2) + b;
+    };
+    </script>
+
+
+
+
+
+  <!--.......................................FOOTER...............................-->
+    <footer class="text-center" align="center" style="background-color: #000; margin-top: 200px;color:white;box-shadow:  0 0 10px  rgb(243, 10, 115);padding: 10px;">
+      <h3 style="color:white;text-shadow: 0 0 5px #fff,
+      0 0 10px #fff, 
+      0 0 20px  rgb(243, 10, 115), 
+      0 0 30px  rgb(243, 10, 115), 
+      0 0 40px  rgb(243, 10, 115), 
+      0 0 50px  rgb(243, 10, 115), 
+      0 0 60px  rgb(243, 10, 115);">VISHNU S PRAMOD</h3>
+      <p style="color:white;text-shadow: 0 0 5px #fff,
+      0 0 10px #fff, 
+      0 0 20px  rgb(243, 10, 115), 
+      0 0 30px  rgb(243, 10, 115), 
+      0 0 40px  rgb(243, 10, 115), 
+      0 0 50px  rgb(243, 10, 115), 
+      0 0 60px  rgb(243, 10, 115);"><i>"DREAM BIGGER, DO BIGGER"</i><br>
+        © 2022 All Rights Reserved</p>
+    </footer>
+
+
+
+
+
+
+  </div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
+
+
